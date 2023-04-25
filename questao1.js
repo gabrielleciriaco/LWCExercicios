@@ -45,3 +45,5 @@ alternarValores() {
     this.instagram = valoresAtuais.Idade;
     this.mensagem = valoresAtuais.Nome;
 }
+  
+}
