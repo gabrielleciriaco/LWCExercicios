@@ -1,0 +1,32 @@
+<template>
+  <lightning-card>
+    <div class="primeiraInfo">
+      <h1>Empresa</h1>
+
+      <p>Empresa: {empresa}</p>
+      <p>CNPJ: {cnpj}</p>
+      <p>Endereço: {endereço}</p>
+    </div>
+
+    <div class="segundaInfo" if:true={visible}>
+      <h1>Nosso produto</h1>
+
+      <p>Produto: {produto}</p>
+      <p>Descrição: {descricao}</p>
+      <p>Preço: {preco}</p>
+    </div>
+
+    <div class="terceiraInfo" if:true={visible}>
+      <h1>Nossas ofertas</h1>
+
+      <p>Promoção</p>
+      <p>Oferta 1: {oferta1}</p>
+      <p>Oferta 2: {oferta2}</p>
+    </div>
+
+    <lightning-button variant="brand" label="Esconder Promoção" title="Primary action" onclick={esconderValores}
+      class="slds-m-left_x-small"></lightning-button>
+
+
+  </lightning-card>
+</template>
