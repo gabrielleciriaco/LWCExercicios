@@ -1,0 +1,27 @@
+<template>
+	<lightning-card>
+		<div class="primeiroValor">
+			<h1>Ficha de cadastro</h1>
+
+			<p>Nome: {nome}</p>
+			<p>Telefone: {telefone}</p>
+			<p>CPF: {cpf}</p>
+			<p>Idade: {idade}</p>
+
+		</div>
+
+		<div class="segundoValor">
+			<h1>Outros dados</h1>
+
+			<p>Email: {email}</p>
+			<p>Linkedin: <a href={linkedin} target="blank">Clique aqui</a></p>
+			<p>Instagram: <a href={instagram} target="blank">Pode clicar</a></p>
+			<p>{mensagem}</p>
+
+			<lightning-button variant="brand" label="Alternar Valores" title="Primary action" onclick={alternarValores}
+				class="slds-m-left_x-small"></lightning-button>
+		</div>
+
+
+	</lightning-card>
+</template>
